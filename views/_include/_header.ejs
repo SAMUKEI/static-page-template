@@ -1,0 +1,17 @@
+<% var image = '/assets/img'; %>
+<img id="logo" src="<%= image%>/logo.png">
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+  <div class="row mx-auto">
+    <% var nav = [
+                { title: 'HOME', url: '/' },
+                { title: 'ABOUT', url: '/about' },
+                ]; %>
+    <% nav.forEach(function (val, idx) { %>
+      <% var active = ""; if (idx == active) { active = "active"; } %>
+      <a class="nav-link <%= active %>" href="<%= val.url %>" role="button">
+        <%= val.title %>
+      </a>
+    <% }); %>
+  </div>
+</nav>

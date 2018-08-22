@@ -1,0 +1,15 @@
+$image: "/assets/img";
+
+/*
+ * 全体的な設定
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container-fluid {
+  padding: 0px !important;
+}
